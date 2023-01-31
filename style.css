@@ -12,7 +12,7 @@
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
 }
 
-[dark-theme="true"] {
+[dark-theme="dark"] {
   --primary-color: rgb(150, 65, 255);
   --primary-variant: #6c63ff;
   --secondary-color: #03dac5;
