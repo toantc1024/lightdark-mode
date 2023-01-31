@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap');
 
 :root {
   --primary-color: rgb(255, 92, 92);
@@ -12,7 +12,7 @@
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
 }
 
-[data-theme="dark"] {
+[dark-theme="true"] {
   --primary-color: rgb(150, 65, 255);
   --primary-variant: #6c63ff;
   --secondary-color: #03dac5;
@@ -37,6 +37,7 @@ section {
   flex-direction: column;
 }
 body {
+  font-family: Comfortaa, sans-serif;
   margin: 0;
   color: var(--on-background);
   background-color: var(--background);
@@ -44,24 +45,27 @@ body {
 }
 
 h1 {
+  font-family: Kaushan Script, sans-serif;
   font-size: 100px;
   margin-bottom: 0;
 }
 
 h2 {
+  color: var(--on-background-alt);
   font-size: 32px;
   font-weight: normal;
 }
 
 /* Navigation */
 nav {
+  font-family: Oswald, sans-serif;
   z-index: 10;
   position: fixed;
   font-size: 24px;
   letter-spacing: 3px;
   padding: 25px;
   width: 100vw;
-  background: rgb(255 255 255 / 50%);
+  background: rgb(255 255 255 / 80%);
 }
 
 a {
@@ -158,6 +162,7 @@ button:hover:not(.outline) {
 
 .text-box {
   width: 40%;
+  margin-top: 25px;
   text-align: justify;
   background: rgb(0 0 0 / 50%);
   color: var(--on-primary);
@@ -256,4 +261,25 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
+}
+
+footer {
+  background-color: var(--background);
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  align-content: center;
+}
+
+footer > .info {
+  color: var(--on-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > .github > button {
+  color: var(--on-background);
+  background-color: var(--background);
 }
